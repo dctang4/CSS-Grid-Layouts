@@ -1,7 +1,73 @@
-/*  LAYOUT 1: TWO COLUMN  */
-
-
-/*  LAYOUT 2: THREE COLUMN */
-
-
-/*  LAYOUT 3: SIMPLE MARKETING  */
+* {
+    border-color: white !important;
+ }
+  
+ /*  LAYOUT 1: TWO COLUMN  */
+ #layout-one div.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-gap: 10px;
+ }
+  
+ #layout-one div.container main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 10px;
+    background-color: white;
+ }
+  
+ /*  LAYOUT 2: THREE COLUMN */
+ #layouts-two div.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-gap: 10px;
+ }
+  
+ #layouts-two div.container main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-gap: 10px;
+    background-color: white;
+ }
+  
+ /*  LAYOUT 3: SIMPLE MARKETING  */
+ #layouts-three div.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 1fr ;
+    grid-gap: 10px;
+ }
+  
+ #layouts-three div.container main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3fr 1fr;
+    grid-gap: 10px;
+    background-color: white;
+ }
+  
+ #layouts-three div.container main section:nth-of-type(1) {
+    grid-column: span 2;
+    display: grid;
+    grid-gap: 10px;
+ }
+  
+ #layouts-three div.container main section:nth-of-type(2) {
+    grid-column: span 2;
+    display: grid;
+    grid-gap: 10px;
+ }
+  
+  
+ #layouts-three div.container main section:nth-of-type(3) {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    background-color: white;
+ }
+  
+  
+ 
